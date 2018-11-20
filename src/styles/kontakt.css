@@ -1,0 +1,76 @@
+.leafletCont {
+  height: 500px;
+  overflow: hidden;
+  z-index: 999;
+  width: 100%;
+  margin-bottom: 35px;
+}
+.kontakt-info-main {
+  display: flex;
+  flex-direction: column;
+}
+.kontakt-info-div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 35px 0;
+}
+.kontakt-info {
+  position: relative;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.kontakt-info-right {
+  position: relative;
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.kontakt-heading {
+  font-size: 30px;
+  font-weight: 500;
+}
+.kontakt-info::after {
+  top: 25px;
+  right: 0px;
+  width: 1px;
+  height: 100px;
+  content: "";
+  background-color: #333;
+  position: absolute;
+}
+.kontakt-icon {
+  color: #3e345a;
+  
+}
+.kontakt-link {
+  color: #333;
+}
+.kontakt-link:hover {
+  color: #3e345a;
+  text-decoration: none;
+}
+@media only screen and (max-width: 400px) {
+  .leafletCont {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .kontakt-info {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .kontakt-info::after {
+    visibility: hidden;
+  }
+  .kontakt-info-right {
+    width: 100%;
+  }
+
+  .kontakt-info-div {
+    flex-direction: column;
+  }
+}
